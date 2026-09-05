@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Phoenix.Core\Phoenix.Core.csproj" />
+    <ProjectReference Include="..\Phoenix.Archaeology\Phoenix.Archaeology.csproj" />
+    <ProjectReference Include="..\Phoenix.Dependency\Phoenix.Dependency.csproj" />
+    <ProjectReference Include="..\Phoenix.Archive\Phoenix.Archive.csproj" />
+    <ProjectReference Include="..\Phoenix.Environment\Phoenix.Environment.csproj" />
+    <ProjectReference Include="..\Phoenix.Build\Phoenix.Build.csproj" />
+    <ProjectReference Include="..\Phoenix.Security\Phoenix.Security.csproj" />
+    <ProjectReference Include="..\Phoenix.Agents\Phoenix.Agents.csproj" />
+    <ProjectReference Include="..\Phoenix.Recovery\Phoenix.Recovery.csproj" />
+    <ProjectReference Include="..\Phoenix.Repair\Phoenix.Repair.csproj" />
+    <ProjectReference Include="..\Phoenix.Providers\Phoenix.Providers.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Phoenix.CLI</RootNamespace>
+  </PropertyGroup>
+
+</Project>
