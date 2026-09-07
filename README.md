@@ -1,19 +1,32 @@
-<h1 align="center">Project Phoenix</h1>
-
 <p align="center">
-  <em>Autonomous Software Resurrection & Dependency Insurance</em>
+  <img src="https://img.shields.io/badge/PROJECT%20PHOENIX-RESURRECTION%20ENGINE-ff4d00?style=flat-square&labelColor=0a0e1a" alt="phoenix" />
 </p>
 
+# PROJECT PHOENIX :: AUTONOMOUS SOFTWARE RESURRECTION
+
+**Autonomous Software Resurrection & Dependency Insurance.** Discovers, preserves, and resurrects projects against supply-chain failure.
+
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
-  <img src="https://img.shields.io/badge/.NET-6.0-512BD4?logo=dotnet&logoColor=white" alt=".NET 6">
-  <img src="https://img.shields.io/badge/C%23-strict-239120" alt="C#">
-  <img src="https://img.shields.io/badge/tests-passing-brightgreen" alt="Tests">
+  <img src="https://img.shields.io/badge/STACK-.NET%206-512BD4?style=flat-square&logo=dotnet&logoColor=white&labelColor=0a0e1a" alt="dotnet"/>
+  <img src="https://img.shields.io/badge/LANG-C%23-239120?style=flat-square&labelColor=0a0e1a" alt="csharp"/>
+  <img src="https://img.shields.io/badge/AGENTS-8%20SPECIALISTS-B8FF1E?style=flat-square&labelColor=0a0e1a" alt="agents"/>
+  <img src="https://img.shields.io/badge/DISASTER-SIMULATION-00E5FF?style=flat-square&labelColor=0a0e1a" alt="disaster"/>
+  <img src="https://img.shields.io/badge/OUTPUT-.phoenix%20CAPSULE-3dd5ff?style=flat-square&labelColor=0a0e1a" alt="capsule"/>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-ff3b3b?style=flat-square&labelColor=0a0e1a" alt="license"/></a>
 </p>
+
+<pre>
+IDENT ......... PHOENIX-01
+CLASS ......... SOFTWARE RESURRECTION / DEPENDENCY INSURANCE
+STATUS ........ ONLINE / ACTIVE
+AGENTS ........ ARCHAEOLOGIST · DEPENDENCY · ENV · SECURITY · BUILD · REPAIR · JUDGE · ARCHIVIST
+OUTPUT ........ .PHOENIX CAPSULE
+LINK .......... /ProjectPhoenix
+</pre>
 
 ---
 
-## Overview
+## // 01 :: OVERVIEW
 
 **Project Phoenix** is a multi-agent autonomous system that discovers, analyzes, preserves, and resurrects software projects. It maps dependency trees, computes insurance status against supply-chain failures, simulates disaster scenarios, and generates recovery capsules — all from a single CLI.
 
