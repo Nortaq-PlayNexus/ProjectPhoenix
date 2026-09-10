@@ -1,0 +1,47 @@
+﻿[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "projectphoenix"
+version = "1.0.0"
+description = "Autonomous Software Resurrection & Dependency Insurance"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "PlayNexus Team", email = "team@playnexus.io"},
+]
+keywords = ["dotnet", "sqlite", "dependency-management", "resurrection", "phoenix"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: C#",
+    "Programming Language :: Python",
+    "Topic :: System :: Software Version Control",
+]
+dependencies = [
+    "Microsoft.Data.Sqlite>=10.0.11",
+    "click>=8.1.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.1.0", "mypy>=1.5.0"]
+dotnet = ["pythonnet>=3.0.0"]
+
+[project.scripts]
+phoenix = "phoenix.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Nortaq-PlayNexus/ProjectPhoenix"
+Repository = "https://github.com/Nortaq-PlayNexus/ProjectPhoenix"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.setuptools.packages.find]
+include = ["phoenix*"]

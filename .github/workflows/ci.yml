@@ -1,0 +1,38 @@
+﻿name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ["6.0", "8.0"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Restore dependencies
+        run: dotnet restore Phoenix.sln
+      - name: Build
+        run: dotnet build Phoenix.sln --configuration Release --no-restore
+      - name: Test
+        run: dotnet test Phoenix.Tests\Phoenix.Tests.csproj --configuration Release --no-build
+      - name: Pack
+        run: dotnet pack Phoenix.Core\Phoenix.Core.csproj --configuration Release --no-build
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0"
+      - name: Analyze
+        run: |
+          dotnet tool install --global dotnet-format
+          dotnet format style Phoenix.sln --verify-no-changes
